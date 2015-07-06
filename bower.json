@@ -19,6 +19,6 @@
     "test"
   ],
   "dependencies": {
-    "jquery.sp-modal": "~0.3"
+    "jquery.sp-modal": "latest"
   }
 }
