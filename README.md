@@ -4,7 +4,7 @@ A Modal Upload plugin for jQuery.
 
 ## Install
 
-Using bower package manager:
+Using [bower](http://bower.io/) package manager:
 ```bash
 bower jquery.sp-modal-upload
 ```
