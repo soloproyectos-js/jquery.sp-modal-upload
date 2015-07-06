@@ -18,7 +18,7 @@ When uploading a file a modal loading appears and it is closed when the request 
 ```JavaScript
 var inputFile = $('#file');
 inputFile.change(function () {
-    $.spModalUpload(inputFile, '../demos/modal-upload/test.php').done(function (data) {
+    $.spModalUpload(inputFile, 'test.php').done(function (data) {
         // prints server response and reset inputFile
         console.log(data);
         inputFile.val('');
