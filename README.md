@@ -1,4 +1,4 @@
-# jquery.sp-modal-upload
+# jQuery.spModalUpload
 
 A Modal Upload plugin for jQuery.
 
