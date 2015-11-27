@@ -25,14 +25,17 @@
      * });
      * ```
      * 
-     * @param {jQuery.<HTMLInputElement>|String} input Input file(s)
-     * @param {String}                           url   URL
-     * @param {Object}                           data  Parameters (not required)
+     * @param {jQuery.<HTMLInputElement>|HTMLInputElement|String} input Input file(s)
+     * @param {String}                                            url   URL
+     * @param {Object}                                            data  Parameters (not required)
      * 
      * @return {jQuery.Promise}
      */
     $.spModalUpload = function (input, url, data) {
-        var req = new $.spModalUploadClass(input, url, data);
+        if ($.type(input) == 'string') {
+            input = $(input);
+        }
+        var req = new $.spModalUploadClass($(input), url, data);
         return req.send();
     };
 })(jQuery);
